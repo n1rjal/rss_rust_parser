@@ -1,0 +1,21 @@
+[package]
+name = "rss_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.31"
+sha2 = "0.9"
+digest = "0.9"
+lazy_static = "1.4.0"
+reqwest = "0.11.20"
+serde = {version="1.0.188", features=["derive"]}
+serde-xml-rs = "0.6.0"
+serde_with = "3.3.0"
+sqlite = "0.31.1"
+tokio = { version = "1.32.0", features = ["full"] }
+xml-rs = "0.8.18"
+clap = "2"
+thread-safe = "0.1.2"
