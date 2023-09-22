@@ -146,6 +146,7 @@ impl<'c> CrudAble<'c, RssEntry<'c>> for RssEntry<'c> {
         let query = "
             SELECT * FROM rss_entries 
             WHERE title LIKE ?
+            ORDER BY publish_date DESC
             LIMIT ?
             OFFSET ?
         ";
